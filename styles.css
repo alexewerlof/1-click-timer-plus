@@ -1,0 +1,31 @@
+body {
+	background-color:#F15A24;
+}
+#ulContainer {
+	padding: 50px;
+}
+ul {
+	background-color: transparent;
+	list-style: none;
+	border-bottom: 1px solid white;
+	padding: 0;
+	margin: 1px;
+	width: 440px;
+	height: 8px;
+}
+
+li {
+	background-color: white;
+	width: 6px;
+	height: 7px;
+	display: inline-block;
+	margin-left: 1px;
+}
+
+li:hover {
+	background-color:#0CF;
+}
+
+li:first-child,
+li:last-child {
+}
