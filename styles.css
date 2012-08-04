@@ -1,17 +1,60 @@
 body {
-	background-color:#F15A24;
+	padding:0;
+	margin:0;
 }
+
+#sound {
+	background-image: url(images/sound.png);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	z-index: 1;
+}
+
+#logo {
+	background-image: url(images/logo.png);
+	width: 347px;
+	height: 57px;
+	z-index: 1;
+	position: absolute;
+	top: 8px;
+	left: 122px;
+}
+
+#madeinsweden {
+	position: absolute;
+	top: 340px;
+	left: 240px;
+	background-image: url(images/madeinsweden.png);
+	width: 100px;
+	height: 10px;
+	z-index: 1;
+}
+
 #ulContainer {
-	padding: 50px;
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 70px;
+	background-color:#F15A24;
+	border-radius:2px;
+	height:240px;
+	width:455px;
 }
+
 ul {
 	background-color: transparent;
 	list-style: none;
-	border-bottom: 1px solid white;
 	padding: 0;
 	margin: 1px;
-	width: 440px;
-	height: 8px;
+	width: 450px;
+	border-bottom: 1px solid white;
+}
+
+ul:last-child {
+	border-bottom: none;
 }
 
 li {
@@ -19,13 +62,33 @@ li {
 	width: 6px;
 	height: 7px;
 	display: inline-block;
-	margin-left: 1px;
+	background-clip: content-box;
+	padding:0 0 1px 1px;
 }
 
 li:hover {
 	background-color:#0CF;
 }
 
-li:first-child,
+li.hour {
+	background-color: transparent;
+	color: white;
+	font-size: 9px;
+	width: 12px;
+	font-family: sans-serif;
+	cursor:default;
+}
+
+ul:hover li.hour {
+	color:#3CF;
+}
+
+li:first-child {
+	margin-right: 2px;
+	text-align: right;
+}
+
 li:last-child {
+	margin-left: 2px;
+	text-align: left;
 }
