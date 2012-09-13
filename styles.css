@@ -1,6 +1,7 @@
 body {
 	padding:0;
 	margin:0;
+	font-family:Varela Round;
 }
 
 #sound {
@@ -91,9 +92,4 @@ li:first-child {
 li:last-child {
 	margin-left: 2px;
 	text-align: left;
-}
-#baloon-1 {
-	position:absolute;
-	top:100px;
-	left:100px;
 }

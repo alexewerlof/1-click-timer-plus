@@ -3,7 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="styles.css"/>
+<link rel="stylesheet" type="text/css" href="baloons.css"/>
+<link rel="stylesheet" type="text/css" href="Varela Round.css"/>
+<script type="text/javascript" defer="defer" src="jquery.js"></script>
 <script type="text/javascript" defer="defer" src="createtable.js"></script>
+<script type="text/javascript" defer="defer" src="baloon.js"></script>
 <title>1-click timer plus</title>
 </head>
 <body>
@@ -11,8 +15,14 @@
 <div id="logo"></div>
 <div id="madeinsweden" title="Design and Development: Alex Hanif"></div>
 <div id="ulContainer"></div>
-<svg version="1.1" id="baloon-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="140px" height="80px" viewBox="0 0 140 80" enable-background="new 0 0 140 80" xml:space="preserve">
-<path fill="green" d="M130.75,0H9.25C4.141,0,0,4.141,0,9.25V60.75C0,65.859,4.141,70,9.25,70c0,0,48.833,0,51.5,0,c1.208,0,2.422,0.783,3.167,1.708c1.6,1.988,3.75,4.5,3.75,4.5c1.556,1.556,3.111,1.639,4.667,0.083c0,0,2.694-2.915,4.072-4.625,C77.25,70.619,78.417,70,79.542,70c2.417,0,51.208,0,51.208,0c5.109,0,9.25-4.141,9.25-9.25V9.25C140,4.141,135.859,0,130.75,0z"/>
-</svg>
+<div id="baloon-1" class="baloon">
+  	<a class="baloon-play-button"></a>
+    <a class="baloon-delete-button"></a>
+  	<div class="baloon-counter-display">
+    	<span class="hour-counter">0</span>:<span class="min-counter">0</span>:<span class="sec-counter">0</span>
+    </div>
+    <div class="baloon-rings-on">Rings on <span class="baloon-rings-on-val">...</span></div>
+    <input class="baloon-caption" type="text" value="caption"/>
+  </div>
 </body>
 </html>
