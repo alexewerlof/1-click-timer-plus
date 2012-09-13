@@ -80,7 +80,7 @@ li.hour {
 }
 
 ul:hover li.hour {
-	color:#3CF;
+	color:#0FF;
 }
 
 li:first-child {
@@ -91,4 +91,9 @@ li:first-child {
 li:last-child {
 	margin-left: 2px;
 	text-align: left;
+}
+#baloon-1 {
+	position:absolute;
+	top:100px;
+	left:100px;
 }
