@@ -22,6 +22,7 @@
 	width:20px;
 	height:20px;
 	background-image:url(images/play-w.png);
+	-webkit-transition:background-image 0.3s linear;
 }
 
 .baloon .play:hover {
@@ -36,6 +37,7 @@
 	width:20px;
 	height:20px;
 	background-image:url(images/delete-w.png);
+	-webkit-transition:background-image 0.3s linear;
 }
 
 .baloon .delete:hover {
