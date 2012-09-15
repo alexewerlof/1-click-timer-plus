@@ -4,6 +4,10 @@ body {
 	font-family:"Varela Round";
 }
 
+a:hover {
+	cursor:pointer;
+}
+
 .no-select {
 	user-select: none;
 	-webkit-user-select: none;

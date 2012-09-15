@@ -1,4 +1,3 @@
-
 .baloon {
 	position:absolute;
 	display:block;
@@ -14,7 +13,7 @@
 	left:154px;
 }
 
-.baloon-play-button {
+.baloon .play {
 	position:absolute;
 	display:block;
 	top:8px;
@@ -24,7 +23,7 @@
 	background-image:url(images/play.png);
 }
 
-.baloon-delete-button {
+.baloon .delete {
 	position:absolute;
 	display:block;
 	top:8px;
@@ -34,7 +33,7 @@
 	background-image:url(images/delete.png);
 }
 
-.baloon-counter-display {
+.baloon .counter {
 	position: absolute;
 	color: white;
 	font-size: 15px;
@@ -44,8 +43,24 @@
 	height:30px;
 }
 
-.baloon-hour-counter-up-button {
+.baloon .hour {
+	position:absolute;
+	left:28px;
+}
+
+.baloon .min {
+	position:absolute;
+	left:55px;
+}
+
+.baloon .sec {
+	position:absolute;
+	left:82px;
+}
+
+.baloon .up {
 	position: absolute;
+	display:none;
 	top: 2px;
 	left: 9px;
 	width: 10px;
@@ -53,84 +68,43 @@
 	background-image: url(images/up.png);
 }
 
-.baloon-hour-counter-val {
+.baloon .down {
+	position: absolute;
+	display:none;
+	top: 25px;
+	left: 9px;
+	width: 10px;
+	height: 10px;
+	background-image: url(images/down.png);
+}
+
+.baloon *:hover .up,
+.baloon *:hover .down {
+	display:block;
+}
+
+.baloon .val {
 	position: absolute;
 	top: 10px;
 	left: 5px;
 	text-align: center;
+	cursor:default;
 }
 
-.baloon-hour-counter-down-button {
-	position: absolute;
-	top: 25px;
-	left: 9px;
-	width: 10px;
-	height: 10px;
-	background-image: url(images/down.png);
-}
-
-.baloon-counter-divider-1 {
+.baloon .d-1 {
 	position: absolute;
 	top: 9px;
-	left: 25px;
+	left: 55px;
 	width: 10px;
+	cursor:default;
 }
 
-.baloon-minute-counter-up-button {
-	position: absolute;
-	top: 2px;
-	left: 34px;
-	width: 10px;
-	height: 10px;
-	background-image: url(images/up.png);
-}
-
-.baloon-minute-counter-val {
-	position: absolute;
-	top: 10px;
-	left: 30px;
-	text-align: center;
-}
-
-.baloon-minute-counter-down-button {
-	position: absolute;
-	top: 25px;
-	left: 34px;
-	width: 10px;
-	height: 10px;
-	background-image: url(images/down.png);
-}
-
-.baloon-counter-divider-2 {
+.baloon .d-2 {
 	position: absolute;
 	top: 9px;
-	left: 50px;
+	left: 82px;
 	width: 10px;
-}
-
-.baloon-second-counter-up-button {
-	position: absolute;
-	top: 2px;
-	left: 59px;
-	width: 10px;
-	height: 10px;
-	background-image: url(images/up.png);
-}
-
-.baloon-second-counter-val {
-	position: absolute;
-	top: 10px;
-	left: 54px;
-	text-align: center;
-}
-
-.baloon-second-counter-down-button {
-	position: absolute;
-	top: 25px;
-	left: 59px;
-	width: 10px;
-	height: 10px;
-	background-image: url(images/down.png);
+	cursor:default;
 }
 
 .baloon-rings-on {

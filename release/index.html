@@ -5,9 +5,9 @@
 <link rel="stylesheet" type="text/css" href="Varela Round.css"/>
 <link rel="stylesheet" type="text/css" href="styles.css"/>
 <link rel="stylesheet" type="text/css" href="baloons.css"/>
-<script type="text/javascript" defer="defer" src="jquery.js"></script>
-<script type="text/javascript" defer="defer" src="createtable.js"></script>
-<script type="text/javascript" defer="defer" src="baloon.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="createtable.js"></script>
+<script type="text/javascript" src="baloon.js"></script>
 <title>1-click timer plus</title>
 </head>
 <body>
@@ -17,23 +17,27 @@
 <div id="madeinsweden" title="Design and Development: Alex Hanif"></div>
 <div id="ulContainer"></div>
 <div id="baloon-1" class="baloon">
-  	<a class="baloon-play-button"></a>
-    <a class="baloon-delete-button"></a>
-  	<div class="baloon-counter-display no-select">
-        <a class="baloon-hour-counter-up-button"></a>
-        <div class="baloon-hour-counter-val">00</div>
-        <a class="baloon-hour-counter-down-button"></a>
-        <div class="baloon-counter-divider-1">:</div>
-        <a class="baloon-minute-counter-up-button"></a>
-        <div class="baloon-minute-counter-val">00</div>
-        <a class="baloon-minute-counter-down-button"></a>
-        <div class="baloon-counter-divider-2">:</div>
-        <a class="baloon-second-counter-up-button"></a>
-        <div class="baloon-second-counter-val">00</div>
-        <a class="baloon-second-counter-down-button"></a>
-    </div>
-    <div class="baloon-rings-on no-select">Rings on <span class="baloon-rings-on-val">00:00:00</span></div>
-    <input class="baloon-caption" type="text" value="caption"/>
+  <div class="play"></div>
+  <div class="delete"></div>
+  <div class="hour">
+    <a class="up"></a>
+    <div class="val">00</div>
+    <a class="down"></a>
   </div>
+  <div class="d-1">:</div>
+  <div class="min">
+    <a class="up"></a>
+    <div class="val">00</div>
+    <a class="down"></a>
+  </div>
+  <div class="d-2">:</div>
+  <div class="sec">
+    <a class="up"></a>
+    <div class="val">00</div>
+    <a class="down"></a>
+  </div>
+  <div class="baloon-rings-on no-select">Rings on <span class="baloon-rings-on-val">00:00:00</span></div>
+  <input class="baloon-caption" type="text" value="caption"/>
+</div>
 </body>
 </html>
