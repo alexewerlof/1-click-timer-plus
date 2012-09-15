@@ -1,7 +1,13 @@
 body {
 	padding:0;
 	margin:0;
-	font-family:Varela Round;
+	font-family:"Varela Round";
+}
+
+.no-select {
+	user-select: none;
+	-webkit-user-select: none;
+	cursor:default;
 }
 
 #sound {
@@ -14,14 +20,23 @@ body {
 	z-index: 1;
 }
 
-#logo {
+#app-logo {
 	background-image: url(images/logo.png);
-	width: 347px;
-	height: 57px;
+	width: 50px;
+	height: 50px;
 	z-index: 1;
 	position: absolute;
-	top: 8px;
-	left: 122px;
+	top: 12px;
+	left: 160px;
+}
+
+#app-name {
+	font-size: 28px;
+	z-index: 1;
+	color: white;
+	position: absolute;
+	top: 18px;
+	left: 220px;
 }
 
 #madeinsweden {
